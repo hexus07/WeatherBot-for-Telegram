@@ -130,7 +130,7 @@ def gorod(message):
                 obida=0
             elif obida < 0:
                 bot.send_message(chat_id,"С чего это вдруг, давай спрашивай погоду"+"\n"+"А не фигнея майся!")
-        if message.text == "Нет":
+        elif message.text == "Нет":
             bot.send_message(chat_id,"Ок)")
             recom=0        
         else:
@@ -143,4 +143,8 @@ def keyboard():
     markup.add(knop1,knop2,knop3)
     markup.add(knop4,knop5,knop6)
     return markup
-bot.polling()
+while True:
+    try:
+        bot.polling()
+    except Exception:
+        time.sleep(15)
