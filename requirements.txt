@@ -1,0 +1,4 @@
+telebot
+puowm
+time
+pyowm.exceptions
