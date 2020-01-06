@@ -143,8 +143,4 @@ def keyboard():
     markup.add(knop1,knop2,knop3)
     markup.add(knop4,knop5,knop6)
     return markup
-while True:
-    try:
-        bot.polling()
-    except Exception:
-        time.sleep(20)
+bot.polling()
